@@ -16,6 +16,9 @@ class MapParams(object):
     # Преобразование координат в параметр ll, требуется без пробелов, через запятую и без скобок
     def ll(self):
         return str(self.lon) + "," + str(self.lat)
+    
+    def set_zoom(self, new_zoom):
+        self.zoom = new_zoom
 
 
 # Создание карты с соответствующими параметрами.
